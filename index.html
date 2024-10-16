@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="no">Whatsapp No:</label>
+            <input type="text" id="no" name="no" required>
+            
+            
+            <h2 class="available">Available Books:</h2>
+            <ul class="books">
+                <li>The Lean Startup</li>
+                <li>Good to Great</li>
+                <li>The 4-Hour Workweek</li>
+                <li>Thinking, Fast and Slow</li>
+                <li>Start with Why</li>
+                <li>You Are a Badass</li>
+                <li>The Power of Now</li>
+                <li>Atomic Habits</li>
+                <li>Pride and Prejudice</li>
+                <li>The Great Gatsby</li>
+                <li>The Catcher in the Rye</li>
+            </ul>
+
+            <label for="book name">Book Name:</label>
+            <input type="text" id="book name" name="book name" required>
+
+            <label for="no of books">No of Books:</label>
+            <input type="number" id="number" name="number" required>
+            <br><br>
+
+            <label for="subject">Language:</label>
+            <select id="subject" name="subject">
+                <option value="Tamil">Tamil</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <div id="other-language" class="hidden">
+                <label for="other">Specify Other Language:</label>
+                <input type="text" id="other" name="other">
+            </div>
+
+            <label for="Payment"> Payment method:</label>
+                <input type="radio" id="Payment" name="Payment">
+                Online Payment
+                <input type="radio" id="Payment" name="Payment">
+                Cash on Delivery
+                
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
